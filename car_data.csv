@@ -1,22 +1,79 @@
+# 🚗 Car Price EDA Project - Full CSV Creation Code
+
 import pandas as pd
 
-# Sample car dataset
+# Create dataset
 data = {
-    'Car_Name': ['Hyundai', 'Honda', 'Toyota', 'BMW'],
-    'Year': [2018, 2020, 2019, 2021],
-    'Selling_Price': [500000, 700000, 650000, 2500000],
-    'Fuel_Type': ['Petrol', 'Diesel', 'Petrol', 'Diesel'],
-    'Transmission': ['Manual', 'Automatic', 'Manual', 'Automatic']
+    'Car_Name': [
+        'Hyundai i20', 'Honda City', 'Toyota Innova', 'BMW X1',
+        'Maruti Swift', 'Kia Seltos', 'Ford EcoSport', 'Audi A4',
+        'Mahindra XUV500', 'Tata Nexon'
+    ],
+
+    'Year': [
+        2018, 2020, 2019, 2021,
+        2017, 2022, 2018, 2020,
+        2019, 2021
+    ],
+
+    'Selling_Price': [
+        550000, 850000, 1500000, 3200000,
+        450000, 1400000, 700000, 2800000,
+        1300000, 1200000
+    ],
+
+    'Fuel_Type': [
+        'Petrol', 'Diesel', 'Diesel', 'Petrol',
+        'Petrol', 'Diesel', 'Diesel', 'Petrol',
+        'Diesel', 'Petrol'
+    ],
+
+    'Transmission': [
+        'Manual', 'Automatic', 'Manual', 'Automatic',
+        'Manual', 'Automatic', 'Manual', 'Automatic',
+        'Manual', 'Automatic'
+    ],
+
+    'Mileage': [
+        18.5, 22.0, 15.0, 14.5,
+        20.5, 19.0, 17.5, 16.0,
+        15.5, 21.0
+    ],
+
+    'Engine_CC': [
+        1200, 1500, 2400, 2000,
+        1197, 1493, 1498, 1998,
+        2179, 1199
+    ],
+
+    'Seats': [
+        5, 5, 7, 5,
+        5, 5, 5, 5,
+        7, 5
+    ]
 }
 
-# Create DataFrame
+# Convert to DataFrame
 df = pd.DataFrame(data)
 
+# Display dataset
+print(df)
+
 # Save as CSV file
-df.to_csv('car_data.csv', index=False)
+df.to_csv("car_data.csv", index=False)
 
-print("CSV file created successfully!")
+print("\n✅ car_data.csv file created successfully!")
 
-df = pd.read_csv('car_data.csv')
 
-df.head()
+
+
+
+
+
+
+
+
+
+
+
+
