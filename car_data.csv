@@ -1,0 +1,22 @@
+import pandas as pd
+
+# Sample car dataset
+data = {
+    'Car_Name': ['Hyundai', 'Honda', 'Toyota', 'BMW'],
+    'Year': [2018, 2020, 2019, 2021],
+    'Selling_Price': [500000, 700000, 650000, 2500000],
+    'Fuel_Type': ['Petrol', 'Diesel', 'Petrol', 'Diesel'],
+    'Transmission': ['Manual', 'Automatic', 'Manual', 'Automatic']
+}
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+# Save as CSV file
+df.to_csv('car_data.csv', index=False)
+
+print("CSV file created successfully!")
+
+df = pd.read_csv('car_data.csv')
+
+df.head()
