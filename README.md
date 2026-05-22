@@ -82,7 +82,29 @@ Images:
 
 
 
+## 🎯 Conclusion
 
+This Exploratory Data Analysis (EDA) project helped uncover important patterns and relationships within the car price dataset.
+
+Key findings include:
+- Newer cars generally have higher selling prices
+- Engine capacity positively affects price
+- Fuel type and transmission influence resale value
+- Mileage has moderate impact on pricing
+
+This project improved skills in:
+- Data cleaning
+- Data visualization
+- Correlation analysis
+- Insight generation using Python
+
+---
+
+## 🚀 Future Improvements
+
+- Build a machine learning model for price prediction
+- Create interactive dashboards
+- Deploy as a web application using Streamlit
 
 
 
