@@ -68,3 +68,25 @@ The project demonstrates how EDA helps uncover meaningful insights and relations
 
 ## 👩‍💻 Author
 Parinitha
+
+
+
+
+
+Images:
+
+<img width="841" height="635" alt="histogram" src="https://github.com/user-attachments/assets/332b4957-96e5-4311-8242-db78dcaf3855" />
+
+<img width="780" height="500" alt="heatmap" src="https://github.com/user-attachments/assets/06aa5181-afa6-4911-b707-13f9146c372c" />
+
+
+
+
+
+
+
+
+
+
+
+
