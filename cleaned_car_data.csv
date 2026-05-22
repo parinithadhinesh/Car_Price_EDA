@@ -1,0 +1,35 @@
+# 🚗 Create Cleaned Car Data CSV File
+
+import pandas as pd
+
+# Load original dataset
+df = pd.read_csv("car_data.csv")
+
+# =========================
+# Data Cleaning
+# =========================
+
+# Remove duplicate rows
+df.drop_duplicates(inplace=True)
+
+# Remove missing values
+df.dropna(inplace=True)
+
+# Reset index
+df.reset_index(drop=True, inplace=True)
+
+# =========================
+# Save Cleaned Dataset
+# =========================
+
+df.to_csv("cleaned_car_data.csv", index=False)
+
+print("✅ cleaned_car_data.csv created successfully!")
+
+# Display cleaned dataset
+print("\nCleaned Dataset Preview:")
+print(df.head())
+
+# Dataset shape
+print("\nDataset Shape:")
+print(df.shape)
